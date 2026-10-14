@@ -2,11 +2,8 @@ import { test, expect } from '@playwright/test';
 const { readFileSync } = require('fs');
 let testDataJson = 'tests/submit-business.json';  
 
-/*right click on the file --> copy relative path*/
-
 test('test', async ({ page }) => {
 
-  //load test data json
   let testData = readFileSync(testDataJson);
   var testDataJObj = JSON.parse(testData);
 
